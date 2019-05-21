@@ -5,22 +5,24 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: 'Mina', sans-serif;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 }
+
+html {
+  background: url(../images/koi-video.mp4) repeat center center fixed;
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;  */
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 .header {
   width: 100%;
   height: 100%;
   padding: 0 10px;
   position: absolute;
-  background-color: rgba(33, 33, 33, 0.5);
-  -webkit-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
   z-index: 10;
 }
 
@@ -29,12 +31,9 @@ html, body {
   padding: 5px 0;
 }
 
-.logo > a {
-  display: inline-block;
-  height: 100%;
-  line-height: 45px;
-  color: #fff;
-  font-size: 24px;
+
+.nav {
+  width: 80%;
 }
 
 /*
@@ -57,9 +56,6 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -76,8 +72,6 @@ html, body {
 .home-logo {
   z-index: 2;
   position: absolute;
-  text-shadow: 2px 0px 15px #666;
-  transition: all .5s ease-in-out;
 }
 
 /*
@@ -86,17 +80,42 @@ html, body {
 
  */
 
-.about-banner{
-  background: url('../images/about/banner.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
+
+ /* The hero image */
+ .hero-image-about {
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about/about-banner2.jpg");
+
+   /* Set a specific height */
+   height: 60%;
+
+   /* Position and center the image to scale nicely on all screens */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ /* Place text in the middle of the image */
+ .hero-text-about {
+   text-align: center;
+   position: absolute;
+   padding-top: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+ }
+
 
 .img-with-text {
     text-align: justify;
-    width: [width of img];
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+  /*  width: [width of img]; */
 }
 
 .img-with-text img {
@@ -110,13 +129,32 @@ html, body {
 
  */
 
-.discography-banner {
-  background: url('../images/discography/banner.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+ /* The hero image */
+ .hero-image-discography {
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/discography/discography-banner2.jpg");
+
+   /* Set a specific height */
+   height: 60%;
+
+   /* Position and center the image to scale nicely on all screens */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ /* Place text in the middle of the image */
+ .hero-text-discography {
+   text-align: center;
+   position: absolute;
+   padding-top: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+ }
+
 
 .album{
   display: block;
@@ -201,13 +239,40 @@ ul-track-listings > li > .track-time {
 
  */
 
-.media-banner {
+ /* The hero image */
+ .hero-image-media {
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/media/media-banner2.jpg");
+
+   /* Set a specific height */
+   height: 60%;
+
+   /* Position and center the image to scale nicely on all screens */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ /* Place text in the middle of the image */
+ .hero-text-media {
+   text-align: center;
+   position: absolute;
+   padding-top: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+ }
+
+
+/*   .media-banner {
   background: url('../images/media/banner.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}   */
 
 .media-list {
   display: flex;
@@ -253,4 +318,228 @@ ul-track-listings > li > .track-time {
 
 .media-list > iframe {
   margin-bottom: 50px;
+}
+
+
+/*
+
+   MERCH
+
+ */
+
+ /* The hero image */
+ .hero-image-merch {
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/merch/merch-banner2.jpg");
+
+   /* Set a specific height */
+   height: 60%;
+
+   /* Position and center the image to scale nicely on all screens */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ /* Place text in the middle of the image */
+ .hero-text-merch {
+   text-align: center;
+   position: absolute;
+   padding-top: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+ }
+
+
+/*  .merch-banner {
+  background: url('../images/merch/banner.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}   */
+
+ul.merch-controls {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #efefef;
+}
+
+@media (min-width: 736px){
+  ul.merch-controls {
+    flex-wrap: nowrap;
+  }
+}
+
+ul.merch-controls > li {
+  width: 100%;
+  height: auto;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.merch-ctrl-btn {
+	height: 4rem;
+  flex-grow: 0;
+	width: 100%;
+	line-height: 24px;
+	font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: none;
+	overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn.active {
+  background: #efefef;
+}
+
+.merch-ctrl-btn:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+
+.merch-ctrl-btn span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+  position: relative;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.merch-ctrl-btn img {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn:hover span {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.merch-ctrl-btn:hover img {
+  bottom: 15%;
+}
+
+.filtr-item {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index:0;
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item > img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.filtr-item:hover {
+  cursor: pointer;
+  top: .5rem;
+  background: #efefef;
+  z-index:10;
+}
+
+.filtr-item:hover > img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item.--sold-out:before {
+  content: "Sold Out";
+  width: 20rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.5625rem;
+  right: -105px;
+  padding-top: .25rem;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -25px);
+  z-index: 1;
+  background: rgba(117,0,2, 0.85);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  transform: rotate(35deg)
+}
+
+.filtr-item.--sold-out:hover{
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+/*
+
+   TOUR DATES
+
+ */
+
+ /* The hero image */
+ .hero-image-tourdates {
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/tourdates/tourdates-banner2.jpg");
+
+   /* Set a specific height */
+   height: 60%;
+
+   /* Position and center the image to scale nicely on all screens */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+ /* Place text in the middle of the image */
+ .hero-text-tourdates {
+   text-align: center;
+   position: absolute;
+   padding-top: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+ }
+
+
+.tour-dates-banner{
+  background: url('../images/tour-dates/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
