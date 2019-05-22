@@ -7,6 +7,7 @@
 
   <title>DJ Okawari</title>
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/spotify-player.css" />
   </head>
 
   <body class="homepage">
@@ -37,12 +38,20 @@
 
 
     <div class="container">
-      <div class="row">
           <h1>Albums</h1>
         </div>
         <div class="album-picture">
           <div class="album">
-            <img class="album-cover" src="./assets/images/discography/compass-album-cover-thumbnail.jpg" />
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="album-cover" src="./assets/images/discography/compass-album-cover-thumbnail.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <iframe src="https://open.spotify.com/embed/album/4G7MUvGL9p3P69QLBrDt3y" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
             <ul class="album-details">
               <li>
                 <h2 class="album-title">Compass</h2>
@@ -157,7 +166,16 @@
             </ul>
           </div>
           <div class="album">
-            <img class="album-cover" src="./assets/images/discography/restore-album-cover-thumbnail.jpg" />
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="album-cover" src="./assets/images/discography/restore-album-cover-thumbnail.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <iframe src="https://open.spotify.com/embed/album/05MLC0oLmx4NhQDy04gLJb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
             <ul class="album-details">
               <li>
                 <h2 class="album-title">Restore</h2>
@@ -281,7 +299,16 @@
             </ul>
           </div>
           <div class="album">
-            <img class="album-cover" src="./assets/images/discography/nightfall-album-cover-thumbnail.jpg" />
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="album-cover" src="./assets/images/discography/nightfall-album-cover-thumbnail.jpg">
+                </div>
+                <div class="flip-card-back">
+                  <iframe src="https://open.spotify.com/embed/album/4Vfkgbf6lK38OFsnkrk6Ly" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+              </div>
+            </div>
             <ul class="album-details">
               <li>
                 <h2 class="album-title">Nightfall</h2>
@@ -359,7 +386,6 @@
             </ul>
           </div>
         </div>
-      </div>
 
 </body>
 </html>
