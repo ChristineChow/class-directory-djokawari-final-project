@@ -8,6 +8,36 @@
 
   <title>DJ Okawari</title>
   <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/slick-theme.css"/>
+
+  <style>
+    .your-class {
+      width: 80%;
+      margin: auto;
+    }
+
+    .your-class img {
+      width: 100%;
+      height: auto;
+      display: black;
+    }
+
+    /* the slides */
+    .slick-slide {
+        margin: 0 10px;
+    }
+    /* the parent */
+    .slick-list {
+        margin: 0 -10px;
+    }
+    <style>
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+  </style>
+
   </head>
 
   <body class="homepage">
@@ -36,12 +66,139 @@
     </div>
   </div>
 
-  <section>
     <div class="container">
       <div class="row">
-        <div class="col-xs-4">
-          <h1 class="section-title">Photos</h1>
+        <div class="list">
+          <h1 class="section-title">Pictures</h1>
         </div>
+
+  <div id="my-carousel" class="your-class">
+    <div>
+      <a href="./assets/images/media/gallery-1.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-1-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-2.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-2-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-3.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-3-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-4.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-4-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-5.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-5-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-6.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-6-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-7.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-7-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-8.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-8-thumbnail.png" />
+      </a>
+    </div>
+    <div>
+      <a href="./assets/images/media/gallery-9.png" data-lightbox="image-1">
+        <img src="./assets/images/media/gallery-9-thumbnail.png" />
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="list">
+        <h1 class="section-title">Art</h1>
+      </div>
+
+    <div id="my-carousel" class="your-class">
+      <div>
+        <a href="./assets/images/media/art-1.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-1-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-2.jpeg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-2-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-3.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-3-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-4.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-4-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-5.png" data-lightbox="image-1">
+          <img src="./assets/images/media/art-5-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-6.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-6-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-7.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-7-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-8.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-8-thumbnail.jpg" />
+        </a>
+      </div>
+      <div>
+        <a href="./assets/images/media/art-9.jpg" data-lightbox="image-1">
+          <img src="./assets/images/media/art-9-thumbnail.jpg" />
+        </a>
+      </div>
+    </div>
+
+    <script src="./assets/javascripts/jquery.js"></script>
+    <script src="./assets/javascripts/slick.min.js"></script>
+    <script src="./assets/javascripts/lightbox.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.your-class').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+          })
+        });
+      </script>
+
+<h3 class="section-title">Artis of album covers and related works done by <a href="https://marumiyan.com/">MARUMIYAN</a>.</h3>
+
+    <h1>Videos</h1>
+    <div class="media-list">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fwvQavLiYf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p7PMJfAT6fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nZqLRvYjls0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tWMGFBYSjV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 
 </body>
 </html>
